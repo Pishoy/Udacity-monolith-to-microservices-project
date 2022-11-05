@@ -6,7 +6,7 @@ metadata:
 data:
   POSTGRES_HOST: postgres.cqspefw7uivu.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: udagram-694082900720-zeinab-dev
+  AWS_BUCKET: bishoybucket
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: helloworld
