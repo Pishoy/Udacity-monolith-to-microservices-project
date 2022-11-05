@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name:  udagram-frontend
-        image: zeinabawd/udagram-frontend:latest
+        image: bishoyabdo/udagram-frontend:latest
         imagePullPolicy: Always  
       restartPolicy: Always

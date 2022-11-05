@@ -16,7 +16,7 @@ spec:
         app: udagram-api-feed
     spec:
       containers:
-      - image: zeinabawd/udagram-api-feed:latest
+      - image: bishoyabdo/udagram-api-feed:latest
         name: udagram-api-feed
         resources:
           requests:

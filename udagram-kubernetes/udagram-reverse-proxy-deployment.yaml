@@ -16,7 +16,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: zeinabawd/reverseproxy:latest
+      - image: bishoyabdo/reverseproxy:latest
         name: reverseproxy
         imagePullPolicy: Always              
         ports:
