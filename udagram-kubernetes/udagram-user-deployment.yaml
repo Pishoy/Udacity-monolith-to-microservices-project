@@ -4,7 +4,7 @@ metadata:
   labels:
     app: udagram-api-user
   name: udagram-api-user
-  namespace: udagram
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -19,12 +19,6 @@ spec:
       - image: bishoyabdo/udagram-api-user:latest
         name: udagram-api-user
         resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "1024Mi"
-            cpu: "500m"
         envFrom:
         - configMapRef:
             name: env-config

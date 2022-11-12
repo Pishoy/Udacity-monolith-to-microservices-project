@@ -4,7 +4,7 @@ metadata:
   labels:
       app: udagram-api-user
   name: backend-user
-  namespace: udagram
+  namespace: default
 spec:
   selector:
     service: udagram-api-user
