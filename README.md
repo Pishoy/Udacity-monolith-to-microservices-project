@@ -6,6 +6,28 @@ The project is split into two parts:
 1. Frontend - Angular web application built with Ionic Framework
 2. Backend RESTful API - Node-Express application
 
+Create EKS Cluster
+```
+# eksctl create cluster --name Demo2 --version 1.23 --region us-east-1  --zones=us-east-1a,us-east-1b  --without-nodegroup
+ 
+# eksctl create nodegroup --cluster=Demo2 \
+                        --region=us-east-1 \
+                        --name=eksdemo1-ng-public2 \
+                        --node-type=m5.large \
+                        --nodes=2 \
+                        --nodes-min=2 \
+                        --nodes-max=4 \
+                        --node-volume-size=20 \
+                        --ssh-access \
+                        --ssh-public-key=kube-demo \
+                        --managed \
+                        --asg-access \
+                        --external-dns-access \
+                        --full-ecr-access \
+                        --appmesh-access \
+                        --alb-ingress-access
+```
+
 ## Getting Started
 > _tip_: it's recommended that you start with getting the backend API running since the frontend web application depends on the API.
 
